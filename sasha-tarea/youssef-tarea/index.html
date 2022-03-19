@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+        <h1>PROMEDIO</h1>
+        <div>
+            <label for="Calificación 1">Calificación 1</label>
+            <input type="text" id="calificacion1" onkeyup="lettersonly(this)">
+        </div>
+        <div>
+            <label for="Calificación 2">Calificación 2</label>
+            <input type="text" id="calificacion2" onkeyup="lettersonly(this)">
+        </div>
+        <div>
+            <label for="Calificación 3">Calificación 3</label>
+            <input type="text" id="calificacion3" onkeyup="lettersonly(this)">
+        </div>
+        <div>
+            <label for="Calificación 4">Calificación 4</label>
+            <input type="text" id="calificacion4" onkeyup="lettersonly(this)">
+        </div>
+        <div>
+            <label for="Calificación 5">Calificación 5</label>
+            <input type="text" id="calificacion5" onkeyup="lettersonly(this)">
+        </div>
+        <div>
+            <label for="Resultado">Resultado</label>
+            <input type="text" id="resultado" value="" disabled="">
+        </div>
+        <div>
+            <label for="Mensaje">Mensaje</label>
+            <input type="text" id="Mensaje" value="" disabled="">
+        </div>
+        <div><button onclick="promedio()">Calcular Promedio</button></div>
+        <div><button onclick="limpiar()">Limpiar Valores</button></div>
+    </div>
+    <div style="text-align: center;">
+        <h1>Calculadora</h1>
+        <button type="button" onclick="calculadora()">Iniciar</button>
+    </div>
+    <div style="text-align: center;">
+        <h1>Hablar con tu Abuela</h1>
+        <button type="button" onclick="abuela()">Iniciar</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
